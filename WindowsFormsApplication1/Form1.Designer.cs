@@ -34,15 +34,17 @@
             this.gUARDARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gUARDARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sALIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gENERARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aRCHIVODETOKENSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aRCHIVODEERRORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtEntrada = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.rtbConsola = new System.Windows.Forms.RichTextBox();
-            this.gENERARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aRCHIVODETOKENSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aRCHIVODEERRORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,30 +72,53 @@
             // aBRIRToolStripMenuItem
             // 
             this.aBRIRToolStripMenuItem.Name = "aBRIRToolStripMenuItem";
-            this.aBRIRToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aBRIRToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.aBRIRToolStripMenuItem.Text = "ABRIR";
             this.aBRIRToolStripMenuItem.Click += new System.EventHandler(this.aBRIRToolStripMenuItem_Click);
             // 
             // gUARDARToolStripMenuItem
             // 
             this.gUARDARToolStripMenuItem.Name = "gUARDARToolStripMenuItem";
-            this.gUARDARToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gUARDARToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.gUARDARToolStripMenuItem.Text = "NUEVO";
             this.gUARDARToolStripMenuItem.Click += new System.EventHandler(this.gUARDARToolStripMenuItem_Click);
             // 
             // gUARDARToolStripMenuItem1
             // 
             this.gUARDARToolStripMenuItem1.Name = "gUARDARToolStripMenuItem1";
-            this.gUARDARToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.gUARDARToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.gUARDARToolStripMenuItem1.Text = "GUARDAR";
             this.gUARDARToolStripMenuItem1.Click += new System.EventHandler(this.gUARDARToolStripMenuItem1_Click);
             // 
             // sALIRToolStripMenuItem
             // 
             this.sALIRToolStripMenuItem.Name = "sALIRToolStripMenuItem";
-            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.sALIRToolStripMenuItem.Text = "SALIR";
             this.sALIRToolStripMenuItem.Click += new System.EventHandler(this.sALIRToolStripMenuItem_Click);
+            // 
+            // gENERARToolStripMenuItem
+            // 
+            this.gENERARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aRCHIVODETOKENSToolStripMenuItem,
+            this.aRCHIVODEERRORESToolStripMenuItem});
+            this.gENERARToolStripMenuItem.Name = "gENERARToolStripMenuItem";
+            this.gENERARToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.gENERARToolStripMenuItem.Text = "GENERAR";
+            // 
+            // aRCHIVODETOKENSToolStripMenuItem
+            // 
+            this.aRCHIVODETOKENSToolStripMenuItem.Name = "aRCHIVODETOKENSToolStripMenuItem";
+            this.aRCHIVODETOKENSToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.aRCHIVODETOKENSToolStripMenuItem.Text = "ARCHIVO DE TOKENS";
+            this.aRCHIVODETOKENSToolStripMenuItem.Click += new System.EventHandler(this.aRCHIVODETOKENSToolStripMenuItem_Click);
+            // 
+            // aRCHIVODEERRORESToolStripMenuItem
+            // 
+            this.aRCHIVODEERRORESToolStripMenuItem.Name = "aRCHIVODEERRORESToolStripMenuItem";
+            this.aRCHIVODEERRORESToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.aRCHIVODEERRORESToolStripMenuItem.Text = "ARCHIVO DE ERRORES";
+            this.aRCHIVODEERRORESToolStripMenuItem.Click += new System.EventHandler(this.aRCHIVODEERRORESToolStripMenuItem_Click);
             // 
             // txtEntrada
             // 
@@ -125,34 +150,20 @@
             this.rtbConsola.TabIndex = 4;
             this.rtbConsola.Text = "";
             // 
-            // gENERARToolStripMenuItem
+            // pictureBox1
             // 
-            this.gENERARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aRCHIVODETOKENSToolStripMenuItem,
-            this.aRCHIVODEERRORESToolStripMenuItem});
-            this.gENERARToolStripMenuItem.Name = "gENERARToolStripMenuItem";
-            this.gENERARToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.gENERARToolStripMenuItem.Text = "GENERAR";
-            // 
-            // aRCHIVODETOKENSToolStripMenuItem
-            // 
-            this.aRCHIVODETOKENSToolStripMenuItem.Name = "aRCHIVODETOKENSToolStripMenuItem";
-            this.aRCHIVODETOKENSToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.aRCHIVODETOKENSToolStripMenuItem.Text = "ARCHIVO DE TOKENS";
-            this.aRCHIVODETOKENSToolStripMenuItem.Click += new System.EventHandler(this.aRCHIVODETOKENSToolStripMenuItem_Click);
-            // 
-            // aRCHIVODEERRORESToolStripMenuItem
-            // 
-            this.aRCHIVODEERRORESToolStripMenuItem.Name = "aRCHIVODEERRORESToolStripMenuItem";
-            this.aRCHIVODEERRORESToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.aRCHIVODEERRORESToolStripMenuItem.Text = "ARCHIVO DE ERRORES";
-            this.aRCHIVODEERRORESToolStripMenuItem.Click += new System.EventHandler(this.aRCHIVODEERRORESToolStripMenuItem_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(462, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(321, 314);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 520);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rtbConsola);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtEntrada);
@@ -162,6 +173,7 @@
             this.Text = "Proyecto 1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,6 +195,7 @@
         private System.Windows.Forms.ToolStripMenuItem gENERARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aRCHIVODETOKENSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aRCHIVODEERRORESToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
